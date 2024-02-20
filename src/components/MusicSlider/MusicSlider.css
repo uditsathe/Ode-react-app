@@ -1,0 +1,107 @@
+.slide{
+    height:100%;
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.musicSlideDiv{
+    padding-top:4rem;
+    height:90%;
+    width: auto;
+}
+
+.musicSlideDiv .youTubePlayer{
+    display: block;
+    /* height: 500px; */
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.slide .rightArrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 17px;
+    font-size: 45px;
+    opacity: 20%;
+    padding: 30px;
+    z-index:1;
+    cursor: pointer;
+}
+.slide .leftArrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 17px;
+    font-size: 45px;
+    opacity: 20%;
+    padding: 30px;
+    z-index:1;
+    cursor: pointer;
+}
+
+.slide .arrow{
+    transition: font-size 0.3s; 
+}
+.slide .arrow:hover{
+    opacity:100%;
+    font-size: 55px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: white;
+  --clr-2: #073438;
+  --clr-3: rgb(125,68,22);
+  --clr-4: rgb(122,144,179);
+  --clr-5: rgb(189,146,88);
+}
+
+.card {
+  display:inline-block;
+  height:auto;
+   /* height: 500px; */
+  /* aspect-ratio: 1 / 1.5;
+  border-radius: 0.5rem;  */
+  background-image: black;
+  padding:0px;
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset:0.00rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 4s linear infinite;
+}
+
+.card::after {
+  filter: blur(7.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

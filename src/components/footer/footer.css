@@ -1,0 +1,27 @@
+.footerDiv{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(242, 210, 140);
+    bottom:0;
+    position:sticky;
+}
+
+.footerDiv a{
+    text-decoration: none;
+    color:rgb(242, 210, 140);
+}
+
+.footerDiv .leftFooter{
+    padding-left: 3rem;
+}
+.footerDiv .rightFooter{
+    padding-right: 3rem;
+    display:flex;
+    gap: 30px;
+}
+
+.footerDiv .rightFooter .linkSocial:hover{
+   transition-duration: 0.3s;
+   transform: scale(1.2 );
+}

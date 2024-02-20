@@ -1,0 +1,95 @@
+
+.homePageDiv{
+    background-image: url("./assets/images/homeBGGIF.gif");
+    background-size:cover;
+    background-position: center;
+    color: rgb(242, 210, 140);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.homePageDiv .headingDiv{
+  display: flex;
+  justify-content: center;
+  gap:3rem;
+}
+
+h1{
+    font-size: 10rem;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.hindiHeading{
+  font-family: "Eczar", serif;
+}
+
+.navDiv{
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    gap:4rem;
+}
+
+.navDiv a{
+    text-decoration: none;
+    color: rgb(242, 210, 140);
+    font-weight: 700;
+}
+
+span{
+  position: absolute;
+  float: right;
+  text-decoration: none;
+  color: rgb(242, 210, 140);
+  font-weight: 700;
+}
+
+
+/*following section has the animation css for nav eliments*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(242, 210, 140);
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  rgb(242, 210, 140);
+    transform-origin: bottom right;
+    transition: transform 0.40s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/*---------------------------------------------------------------*/
+.homePageDiv2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:100vh;
+  background-color: black;
+  color:rgb(242, 210, 140);
+}
+
+.homePageDiv2 h1{
+  font-size: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.homePageDiv2 p{
+  font-size: large;
+  width:850px;
+}

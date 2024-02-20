@@ -1,0 +1,28 @@
+.musicPageDiv{
+    color: rgb(242, 210, 140);
+    align-items: center;
+    width: 100vw;
+}
+
+.musicPageDiv .title{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 0;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+.musicPageDiv .title a{
+    text-decoration: none;
+    color: rgb(242, 210, 140);
+}
+.musicPageDiv .title .h2{
+    margin: 0 0;
+}
+
+.musicPageDiv .sliderContent{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    align-items: center;
+}
