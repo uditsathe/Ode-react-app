@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
-import Home from "./pages/HomePage/Home";
+import Home from "./pages/HomePage/home";
 import Photo from "./pages/PhotoPage/Photo";
 import Music from "./pages/MusicPage/Music";
 import "./App.css";
