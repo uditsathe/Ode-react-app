@@ -4,7 +4,7 @@ import "./Photo.css";
 
 const slides = [
   { add: "./images/indiaGate.jpg", desc: "The India Gate, Delhi" },
-  { add: "./images/fortDoor.jpg", desc: "Mandu, Madhya Pradesh" },
+  { add: "./images/fortDoor.jpg", desc: "Mandav, Madhya Pradesh" },
   {
     add: "./images/paintedStork.jpg",
     desc: "Painted Storks at Ranganathittu Sanctuary, Karnataka",
@@ -20,7 +20,7 @@ const slides = [
   { add: "./images/coorg.jpg", desc: "Coorg, Karnataka" },
   {
     add: "./images/manduValley.jpg",
-    desc: "A valley in Mandu, Madhya Pradesh",
+    desc: "A valley in Mandav, Madhya Pradesh",
   },
   {
     add: "./images/narmada.jpg",
